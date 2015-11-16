@@ -11,12 +11,12 @@ permalink: /:title
 singlepage: resume
 
 # Social share and comments.
-twitter: stephengroat
-github: stephengroat
-google: +stephengroat
-linkedin: sgroat
-scholar: 2FxnwFgAAAAJ
-email: stephen@egroat.com
+#twitter: stephengroat
+#github: stephengroat
+#google: +stephengroat
+#linkedin: sgroat
+#scholar: 2FxnwFgAAAAJ
+#email: stephen@egroat.com
 
 # RSS feed
 rss-feed-limit: 10
