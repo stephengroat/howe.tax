@@ -1,7 +1,7 @@
 # General
 name: "Jessica Howe"
 description: "Tax Professional"
-url: http://www.howe.tax
+url: https://www.howe.tax
 
 markdown: kramdown
 highlighter: rouge
