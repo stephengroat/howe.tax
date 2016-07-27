@@ -1,0 +1,53 @@
+;; 
+;; Domain:     howe.tax
+;; Exported:   2016-07-27 17:23:24
+;; 
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;; 
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;; 
+;; http://www.isc.org/
+;; 
+;; And RFC 1035:
+;; 
+;; http://www.ietf.org/rfc/rfc1035.txt
+;; 
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;; 
+;;     Use at your own risk.
+$ORIGIN .
+@	3600	IN	SOA	howe.tax.	root.howe.tax.	(
+		2022130680	; serial
+		7200		; refresh
+		3600		; retry
+		86400		; expire
+		3600)		; minimum
+
+
+
+;; NS Records (YOU MUST CHANGE THIS)
+howe.tax.	300	IN	NS	REPACE&ME$WITH^YOUR@NAMESERVER.
+
+;; MX Records
+howe.tax.	300	IN	MX	10	mxa.mailgun.org.
+howe.tax.	300	IN	MX	10	mxb.mailgun.org.
+
+;; TXT Records
+howe.tax.	300	IN	TXT	"v=spf1 include:mailgun.org ~all"
+krs._domainkey.howe.tax.	300	IN	TXT	"k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDMBiY/k1po3gML2GoC6hZXdg/MOjRs659LC9+3hjQ2u7zsyaxL2kqrkq+CgA5mQOm61cFMBbKWzaiLYhQ7e4/dOKBAcRFMsFpMjAi/w5GECkB5/J1qyYMrup2bmBzgxTHPBo+/OiHkvCxgxDZ7OGoWfdbxcUTHev79Pfu5GdajWwIDAQAB"
+
+;; CNAME Records
+www.howe.tax.	300	IN	CNAME	stephengroat.github.io.
+email.howe.tax.	300	IN	CNAME	mailgun.org.
+
+;; A Records (IPv4 addresses)
+howe.tax.	300	IN	A	192.30.252.153
+howe.tax.	300	IN	A	192.30.252.154
